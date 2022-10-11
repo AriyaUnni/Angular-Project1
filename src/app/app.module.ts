@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewAirlinesComponent } from './view-airlines/view-airlines.component';
 import { ViewPassengersComponent } from './view-passengers/view-passengers.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes:Routes=[
  {
@@ -29,7 +30,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
